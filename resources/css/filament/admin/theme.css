@@ -1,0 +1,9 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+
+.fi-sidebar-nav-item-label {
+        @apply text-lg; /* Adjust size here (e.g., text-xs, text-sm, text-base) */
+}

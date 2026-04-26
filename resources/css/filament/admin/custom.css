@@ -1,0 +1,11 @@
+/* resources/css/filament/admin/custom.css */
+
+/* Sembunyikan label "Filters" di header tabel */
+.fi-ta-filters-trigger-label {
+    display: none !important;
+}
+
+/* Jika Anda ingin menghilangkan seluruh baris judul filter agar lebih bersih */
+.fi-ta-filters-form-header {
+    display: none !important;
+}
