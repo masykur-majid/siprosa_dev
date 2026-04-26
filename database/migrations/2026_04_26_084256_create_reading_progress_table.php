@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reading_progresses', function (Blueprint $table) {
+        Schema::create('reading_progress', function (Blueprint $table) {
             $table->id();
             $table->foreignId('student_id')->constrained();
             $table->foreignId('book_id')->constrained();
-            $table->enum('status', ['reading', 'completed', 'dropped']);
+            $table->enum('status', ['reading', 'finished', 'dropped']);
             $table->integer('current_page');
             $table->date('started_at');
             $table->timestamps();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reading_progresses');
+        Schema::dropIfExists('reading_progress');
     }
 };

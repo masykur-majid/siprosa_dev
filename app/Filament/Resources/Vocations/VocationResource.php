@@ -20,7 +20,7 @@ class VocationResource extends Resource
 {
     protected static ?string $model = Vocation::class;
 
-    protected static string|BackedEnum|null $navigationIcon = TablerIcon::CircleLetterVFilled;
+    protected static string|BackedEnum|null $navigationIcon = TablerIcon::SquareRoundedLetterVFilled;
     protected static string|UnitEnum|null $navigationGroup = 'Students & Class';
     protected static ?int $navigationSort = 2;
 

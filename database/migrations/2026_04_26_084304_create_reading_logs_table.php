@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('reading_logs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('reading_progress_id')->constrained();
+            $table->foreignId('reading_progress_id')->constrained()->on('reading_progress');
             $table->date('read_date');
             $table->integer('total_pages_read');
             $table->integer('last_page_read');

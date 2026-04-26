@@ -7,3 +7,7 @@
 .fi-sidebar-nav-item-label {
         @apply text-lg; /* Adjust size here (e.g., text-xs, text-sm, text-base) */
 }
+
+.my-custom-badge-size .fi-badge {
+    @apply text-lg capitalize px-4 py-1 font-bold;
+}

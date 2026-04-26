@@ -25,7 +25,7 @@ class StudentForm
                     ])
                     ->default('X'),
                 Select::make('classname')
-                    ->relationship('classList', 'class_name'),
+                    ->relationship('classLists', 'class_name'),
             ]);
     }
 }
