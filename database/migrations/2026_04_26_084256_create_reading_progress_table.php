@@ -18,6 +18,7 @@ return new class extends Migration
             $table->enum('status', ['reading', 'finished', 'dropped']);
             $table->integer('current_page');
             $table->date('started_at');
+            $table->date('finished_at')->nullable();
             $table->timestamps();
         });
     }

@@ -23,7 +23,6 @@ class ReadingProgress extends Model
         return $this->belongsTo(Book::class, 'book_id', 'id');
     }
     
-    
     public function updateProgress(int $lastPageRead): void
     {
         $this->current_page = $lastPageRead;

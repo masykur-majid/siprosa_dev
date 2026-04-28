@@ -11,8 +11,8 @@ class ReadingLogInfolist
     {
         return $schema
             ->components([
-                TextEntry::make('reading_progress_id')
-                    ->numeric(),
+                // TextEntry::make('reading_progress_id')
+                //     ->numeric(),
                 TextEntry::make('read_date')
                     ->date(),
                 TextEntry::make('total_pages_read')
@@ -21,12 +21,12 @@ class ReadingLogInfolist
                     ->numeric(),
                 TextEntry::make('notes')
                     ->columnSpanFull(),
-                TextEntry::make('created_at')
-                    ->dateTime()
-                    ->placeholder('-'),
-                TextEntry::make('updated_at')
-                    ->dateTime()
-                    ->placeholder('-'),
+                // TextEntry::make('created_at')
+                //     ->dateTime()
+                //     ->placeholder('-'),
+                // TextEntry::make('updated_at')
+                //     ->dateTime()
+                //     ->placeholder('-'),
             ]);
     }
 }

@@ -69,6 +69,8 @@ class ReadingProgressInfolist
                             ->numeric(),
                         TextEntry::make('started_at')
                             ->date(),
+                        TextEntry::make('finished_at')
+                            ->date(),
                     ])->columns(4)
             ])
             ->columns(1);
